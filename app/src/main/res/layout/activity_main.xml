@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="lihat navbar yok gez"
+        android:text="lihat navbar yok gezz"
         tools:layout_editor_absoluteX="168dp"
         tools:layout_editor_absoluteY="448dp"
         android:backgroundTint="@color/cream"/>
