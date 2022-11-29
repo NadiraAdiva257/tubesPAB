@@ -12,12 +12,10 @@
     android:layout_width="409dp"
     android:layout_height="60dp"
     android:orientation="horizontal"
-    android:background="@color/cream"
+    android:background="@color/white"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintBottom_toBottomOf="parent">
-
-
     <ImageView
         android:id="@+id/ic_home"
         android:src="@drawable/ic_home_active"
@@ -32,7 +30,7 @@
         android:layout_weight="1"/>
     <ImageView
         android:id="@+id/ic_quest"
-        android:src="@drawable/mission"
+        android:src="@drawable/ic_quest"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"/>
