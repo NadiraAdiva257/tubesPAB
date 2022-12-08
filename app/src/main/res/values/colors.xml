@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="cream">#ECB390</color>
+    <color name="red">#BE3942</color>
+    <color name="redLight">#C95C62</color>
 </resources>
