@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red"
+    android:background="@color/grey"
     tools:context=".SignUpActivity">
 
     <ImageView
@@ -28,7 +28,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:text="Sign Up"
-        android:textColor="@color/white"
+        android:textColor="@color/red"
         android:textStyle="bold"
         android:textSize="24sp"
         android:gravity="center"/>
@@ -40,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/TSignUp"
-        android:textColor="@color/white"
+        android:textColor="@color/red"
         android:text="Nama"
         android:textSize="16sp"
         android:layout_marginTop="30dp"
@@ -54,15 +54,15 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/shape_line_grey"
+        android:background="@drawable/shape_line_red"
         android:drawablePadding="10dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingStart="10dp"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/TNamaSign"
+        android:textColor="@color/red"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
@@ -77,7 +77,7 @@
         android:layout_marginEnd="16dp"
         android:textSize="16sp"
         android:text="Username"
-        android:textColor="@color/white"/>
+        android:textColor="@color/red"/>
 
     <EditText
         android:id="@+id/EUsernameSign"
@@ -86,12 +86,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/shape_line_grey"
+        android:background="@drawable/shape_line_red"
         android:drawablePadding="10dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/red"
         android:paddingStart="10dp"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/TUsernameSign"
@@ -109,7 +109,7 @@
         android:layout_marginEnd="16dp"
         android:textSize="16sp"
         android:text="Email"
-        android:textColor="@color/white"/>
+        android:textColor="@color/red"/>
 
     <EditText
         android:id="@+id/EEmailSign"
@@ -118,12 +118,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/shape_line_grey"
+        android:background="@drawable/shape_line_red"
         android:drawablePadding="10dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/red"
         android:paddingStart="10dp"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/TEmailSign"
@@ -141,7 +141,7 @@
         android:layout_marginEnd="16dp"
         android:textSize="16sp"
         android:text="Password"
-        android:textColor="@color/white"/>
+        android:textColor="@color/red"/>
 
     <EditText
         android:id="@+id/EPasswordSign"
@@ -150,12 +150,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/shape_line_grey"
+        android:background="@drawable/shape_line_red"
         android:drawablePadding="10dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="@color/red"
         android:paddingStart="10dp"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/TPasswordSign"
@@ -173,7 +173,7 @@
         android:layout_marginEnd="16dp"
         android:textSize="16sp"
         android:text="No Telepon"
-        android:textColor="@color/white"/>
+        android:textColor="@color/red"/>
 
     <EditText
         android:id="@+id/ENohpSign"
@@ -182,12 +182,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/shape_line_grey"
+        android:background="@drawable/shape_line_red"
         android:drawablePadding="10dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/red"
         android:paddingStart="10dp"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/TNohpSign"
@@ -200,12 +200,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/shape_rectangle_white"
+        android:background="@drawable/shape_rectangle_red"
         android:text="Daftar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/red"/>
+        android:textColor="@color/white"/>
 
 
 

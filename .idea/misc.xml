@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PAB/app/src/main/res/drawable-v24/shape_line_grey.xml" value="0.1395" />
         <entry key="..\:/PAB/app/src/main/res/drawable-v24/shape_line_white.xml" value="0.157" />
         <entry key="..\:/PAB/app/src/main/res/drawable-v24/shape_rectangle_grey.xml" value="0.157" />
         <entry key="..\:/PAB/app/src/main/res/drawable-v24/shape_rectangle_red.xml" value="0.152" />
@@ -12,6 +13,7 @@
         <entry key="..\:/PAB/app/src/main/res/drawable/ic_text_icon.xml" value="0.157" />
         <entry key="..\:/PAB/app/src/main/res/drawable/ic_username.xml" value="0.157" />
         <entry key="..\:/PAB/app/src/main/res/drawable/logorahui.xml" value="0.157" />
+        <entry key="..\:/PAB/app/src/main/res/drawable/shape_line_red.xml" value="0.1395" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_home.xml" value="0.12158054711246201" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_main.xml" value="0.12158054711246201" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />

@@ -11,5 +11,6 @@
     <color name="cream">#ECB390</color>
     <color name="red">#BE3942</color>
     <color name="redLight">#C95C62</color>
-    <color name="grey">#DAE1E7</color>
+    <color name="grey">#F6F6F6</color>
+    <color name="greydark">#DAE1E7</color>
 </resources>
