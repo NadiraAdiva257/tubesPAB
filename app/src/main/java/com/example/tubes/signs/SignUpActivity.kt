@@ -1,4 +1,4 @@
-package com.example.tubes
+package com.example.tubes.signs
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,8 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tubes.R
+import com.example.tubes.User
 import com.google.firebase.database.*
 
 class SignUpActivity : AppCompatActivity() {
@@ -25,8 +27,6 @@ class SignUpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        actionBar?.hide()
         setContentView(R.layout.activity_sign_up)
 
         mFirebaseInstance = FirebaseDatabase.getInstance()
@@ -44,6 +44,7 @@ class SignUpActivity : AppCompatActivity() {
         Iback.setOnClickListener {
             var goSign = Intent(this, SignInActivity::class.java)
             startActivity(goSign)
+            finishAffinity()
         }
 
         BdaftarAkun.setOnClickListener {

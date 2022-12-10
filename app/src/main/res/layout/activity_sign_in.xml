@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    tools:context=".SignInActivity">
+    tools:context=".signs.SignInActivity">
 
     <ImageView
         android:id="@+id/ISign"
@@ -24,7 +24,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/shape_line_red"
+        android:background="@drawable/shape_line_redlight"
         android:drawableLeft="@drawable/ic_username"
         android:drawablePadding="10dp"
         android:ems="10"
@@ -45,7 +45,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/shape_line_red"
+        android:background="@drawable/shape_line_redlight"
         android:drawableLeft="@drawable/ic_password"
         android:drawablePadding="10dp"
         android:ems="10"
