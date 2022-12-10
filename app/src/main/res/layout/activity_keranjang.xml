@@ -263,7 +263,8 @@
                     <Spinner
                         android:id="@+id/spJam"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <EditText
                         android:id="@+id/editTextTextPersonName"
@@ -278,7 +279,8 @@
                     <Spinner
                         android:id="@+id/spBank"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
