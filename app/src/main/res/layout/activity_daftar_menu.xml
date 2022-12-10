@@ -103,7 +103,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tvJudulQuest1"
+                                android:id="@+id/tvNamaRamen1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Golden Geisha Batan"
@@ -112,35 +112,35 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/tvDeskQuest1"
+                                android:id="@+id/tvDeskRamen1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:text="Ramen dengan kuah baitan kaldu emas gurih pekat. Spesial sari tulang dan daging. Toping shogun wagyu roll dan mushitori cut serta shitake." />
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="268dp"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
                                 android:orientation="horizontal">
 
                                 <TextView
                                     android:id="@+id/tvHargaRamen1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="8dp"
-                                    android:text="50.000"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="170dp"
+                                    android:layout_weight="0"
+                                    android:text="55.000"
                                     android:textColor="#000000"
-                                    android:textSize="18sp"
                                     android:textStyle="bold" />
 
                                 <ImageView
                                     android:id="@+id/ivAddRamen1"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="40dp"
-                                    android:layout_marginLeft="130dp"
-                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
                                     app:srcCompat="@drawable/ic_add" />
-
                             </LinearLayout>
 
                         </LinearLayout>
@@ -175,7 +175,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tvJudulRamen2"
+                                android:id="@+id/tvNamaRamen2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Tori Yakiniku Tamtam"
@@ -191,28 +191,28 @@
                                 android:text="Ramen dengan kuah baitan kaldu emas gurih pekat. Spesial sari tulang dan daging. Toping shogun wagyu roll dan mushitori cut. Ditambah tamtam chili oil spesial pedas" />
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="268dp"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
                                 android:orientation="horizontal">
 
                                 <TextView
                                     android:id="@+id/tvHargaRamen2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="8dp"
-                                    android:text="50.000"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="170dp"
+                                    android:layout_weight="0"
+                                    android:text="55.000"
                                     android:textColor="#000000"
-                                    android:textSize="18sp"
                                     android:textStyle="bold" />
 
                                 <ImageView
                                     android:id="@+id/ivAddRamen2"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="40dp"
-                                    android:layout_marginLeft="130dp"
-                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
                                     app:srcCompat="@drawable/ic_add" />
-
                             </LinearLayout>
 
                         </LinearLayout>
@@ -247,7 +247,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tvJudulRamen3"
+                                android:id="@+id/tvNamaRamen3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Wagyu Chashu Tamtam"
@@ -263,28 +263,28 @@
                                 android:text="Ramen dengan kuah baitan kaldu emas gurih pekat. Spesial sari tulang dan daging. Topping wagyu beef bbq jepang dan shitake. Ditambah tamtam chili oil spesial gurih pedas." />
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="268dp"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
                                 android:orientation="horizontal">
 
                                 <TextView
                                     android:id="@+id/tvHargaRamen3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="8dp"
-                                    android:text="50.000"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="170dp"
+                                    android:layout_weight="0"
+                                    android:text="55.000"
                                     android:textColor="#000000"
-                                    android:textSize="18sp"
                                     android:textStyle="bold" />
 
                                 <ImageView
                                     android:id="@+id/ivAddRamen3"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="40dp"
-                                    android:layout_marginLeft="130dp"
-                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
                                     app:srcCompat="@drawable/ic_add" />
-
                             </LinearLayout>
 
                         </LinearLayout>
@@ -337,7 +337,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tvJudulSushi1"
+                                android:id="@+id/tvNamaSushi1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Golden Geisha Batan"
@@ -353,28 +353,28 @@
                                 android:text="Ramen dengan kuah baitan kaldu emas gurih pekat special sari tulang dan daging serta toping shogun wagyu roll dan mushitori cut. Merupakan handmade racikan dapur golden geisha." />
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="268dp"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
                                 android:orientation="horizontal">
 
                                 <TextView
                                     android:id="@+id/tvHargaSushi1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="8dp"
-                                    android:text="50.000"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="170dp"
+                                    android:layout_weight="0"
+                                    android:text="55.000"
                                     android:textColor="#000000"
-                                    android:textSize="18sp"
                                     android:textStyle="bold" />
 
                                 <ImageView
                                     android:id="@+id/ivAddSushi1"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="40dp"
-                                    android:layout_marginLeft="130dp"
-                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
                                     app:srcCompat="@drawable/ic_add" />
-
                             </LinearLayout>
 
                         </LinearLayout>
