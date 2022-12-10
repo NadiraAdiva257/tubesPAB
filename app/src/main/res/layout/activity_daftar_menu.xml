@@ -17,8 +17,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
             android:elevation="50dp"
-            app:cardBackgroundColor="#EBEBEB"
+            app:cardBackgroundColor="#BE3942"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
@@ -33,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Golden Geisha"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -42,14 +43,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ruko Kelapa Hijau No. 1, Jl. Anggajaya 1, Condongcatur, Depok, Sleman, Yogyakarta "
-                    android:textColor="#000000" />
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/tvWaktuHarga2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="10.00 - 21.00 | 15.000 - 50.000"
-                    android:textColor="#000000" />
+                    android:textColor="#FFFFFF" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

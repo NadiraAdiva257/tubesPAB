@@ -14,16 +14,37 @@
         android:theme="@style/Theme.Tubes"
         tools:targetApi="31">
         <activity
+            android:name=".DaftarMenu"
+            android:exported="true" />
+        <activity
+            android:name=".DaftarRestoran"
+            android:exported="true" />
+        <activity
+            android:name=".History"
+            android:exported="true" />
+        <activity
+            android:name=".HistoryRiwayat"
+            android:exported="true" />
+        <activity
+            android:name=".HistoryTerjadwal"
+            android:exported="true" />
+        <activity
             android:name=".Home"
             android:exported="true" />
         <activity
-            android:name=".DaftarMenu"
+            android:name=".Keranjang"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Quest"
+            android:exported="true" />
     </application>
 
 </manifest>
