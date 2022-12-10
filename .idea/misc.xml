@@ -3,9 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PAB/tubes/app/src/main/res/drawable/ic_order.xml" value="0.2115" />
+        <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_daftar_menu.xml" value="0.33" />
+        <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_daftar_restoran.xml" value="0.22" />
         <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_history.xml" value="0.17255434782608695" />
+        <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_history_riwayat.xml" value="0.25" />
+        <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_history_terjadwal.xml" value="0.25" />
         <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_keranjang.xml" value="0.33" />
         <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_main.xml" value="0.16485507246376813" />
+        <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_quest.xml" value="0.25" />
+        <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
+        <entry key="..\:/PAB/tubes/app/src/main/res/layout/activity_splash_screen.xml" value="0.17753623188405798" />
         <entry key="..\:/Users/AR COM/tubesPAB/app/src/main/res/layout/activity_main.xml" value="0.17527173913043478" />
       </map>
     </option>
