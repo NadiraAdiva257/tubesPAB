@@ -1,15 +1,15 @@
-package com.example.tubes
+package com.example.tubes.signs
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageView
 import android.widget.Toast
+import com.example.tubes.HomeActivity
+import com.example.tubes.R
+import com.example.tubes.User
 import com.google.firebase.database.*
-import java.util.prefs.Preferences
 
 class SignInActivity : AppCompatActivity() {
 
@@ -23,12 +23,10 @@ class SignInActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        actionBar?.hide()
         setContentView(R.layout.activity_sign_in)
 
         mDatabaseReference = FirebaseDatabase.getInstance().getReference("User")
-        preference = Preferences(this)
+        preference = com.example.tubes.Preferences(this)
 
         Bdaftar = findViewById<Button>(R.id.Bbuat)
         Eusername = findViewById<EditText>(R.id.Eusername)
@@ -77,8 +75,9 @@ class SignInActivity : AppCompatActivity() {
                         preference.setValues("noHp", user.noHp.toString())
                         preference.setValues("status", "1")
 
-                        var goHome = Intent(this@SignInActivity, SignUpActivity::class.java)
+                        var goHome = Intent(this@SignInActivity, HomeActivity::class.java)
                         startActivity(goHome)
+                        finishAffinity()
                     } else {
                         Toast.makeText(
                             this@SignInActivity, "Password anda salah",
