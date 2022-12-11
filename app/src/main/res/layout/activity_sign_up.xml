@@ -141,7 +141,7 @@
         android:layout_marginEnd="16dp"
         android:textSize="16sp"
         android:text="Password"
-        android:textColor="@color/red"/>
+        android:textColor="@color/red" />
 
     <EditText
         android:id="@+id/EPasswordSign"
@@ -162,7 +162,7 @@
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/TNohpSign"
+        android:id="@+id/TNoHpSign"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -172,11 +172,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:textSize="16sp"
-        android:text="No Telepon"
-        android:textColor="@color/red"/>
+        android:text="No HP"
+        android:textColor="@color/red" />
 
     <EditText
-        android:id="@+id/ENohpSign"
+        android:id="@+id/ENoHpSign"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
@@ -185,14 +185,14 @@
         android:background="@drawable/shape_line_red"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="phone"
         android:textColor="@color/red"
         android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TNohpSign"
+        app:layout_constraintTop_toBottomOf="@id/TNoHpSign"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-    
+
     <Button
         android:id="@+id/BbuatAkun"
         android:layout_width="0dp"
@@ -206,10 +206,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/white"/>
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
