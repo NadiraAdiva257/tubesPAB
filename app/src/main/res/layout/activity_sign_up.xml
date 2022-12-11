@@ -121,7 +121,7 @@
         android:background="@drawable/shape_line_red"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:textColor="@color/red"
         android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"

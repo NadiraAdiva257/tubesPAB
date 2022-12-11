@@ -73,6 +73,7 @@ class SignInActivity : AppCompatActivity() {
                         preference.setValues("email", user.email.toString())
                         preference.setValues("password", user.password.toString())
                         preference.setValues("noHp", user.noHp.toString())
+                        preference.setValues("poin", user.poin.toString())
                         preference.setValues("status", "1")
 
                         var goHome = Intent(this@SignInActivity, HomeActivity::class.java)

@@ -6,5 +6,6 @@ class User {
     var email: String ?=""
     var password: String ?=""
     var noHp: String ?=""
+    var poin: String ?=""
 
 }
