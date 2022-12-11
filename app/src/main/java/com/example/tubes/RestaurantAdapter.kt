@@ -37,7 +37,7 @@ class RestaurantAdapter(private var data: List<Restaurant>,
         private val tvNama:TextView = view.findViewById(R.id.tvTokoRamen)
         private val tvJam:TextView = view.findViewById(R.id.tvJamToko)
         private val tvLok:TextView = view.findViewById(R.id.tvLokToko)
-        private val tvImage:ImageView = view.findViewById(R.id.ivTokoRamen1)
+        private val tvImage:ImageView = view.findViewById(R.id.ivTokoRamen)
 
         fun bindItem(data:Restaurant, listener: (Restaurant) -> Unit, context: Context) {
             tvNama.setText(data.nama)

@@ -39,7 +39,7 @@ class SignUpActivity : AppCompatActivity() {
         sUsername = findViewById<EditText>(R.id.EUsernameSign)
         sEmail = findViewById<EditText>(R.id.EEmailSign)
         sPassword = findViewById<EditText>(R.id.EPasswordSign)
-        sNohp = findViewById<EditText>(R.id.ENohpSign)
+        sNohp = findViewById<EditText>(R.id.ENoHpSign)
 
         Iback.setOnClickListener {
             var goSign = Intent(this, SignInActivity::class.java)
