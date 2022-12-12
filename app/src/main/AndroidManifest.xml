@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.tubes">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -37,13 +43,32 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" >
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurant"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".Quest"
+            android:name=".signs.SignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".signs.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
             android:exported="true" />
     </application>
 

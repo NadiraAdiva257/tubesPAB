@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "881595457136",
+    "project_id": "rahuibyfourtwenty",
+    "storage_bucket": "rahuibyfourtwenty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881595457136:android:e0693604ba2e7f77b69eb5",
+        "android_client_info": {
+          "package_name": "com.example.tubes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881595457136-5crrerjqtq6fhi3m0gu5rb6d3hs0slq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tubes",
+            "certificate_hash": "7032366b4751d9bcc878029ac02493c1512d1699"
+          }
+        },
+        {
+          "client_id": "881595457136-thbhgi6gfrjggum6c02matek78pnnpk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlp8Blo16MrJhYbuoRUxH6MWH9INMP6PE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881595457136-thbhgi6gfrjggum6c02matek78pnnpk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
