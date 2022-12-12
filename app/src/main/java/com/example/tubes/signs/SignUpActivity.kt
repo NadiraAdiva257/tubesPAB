@@ -104,7 +104,7 @@ class SignUpActivity : AppCompatActivity() {
                     startActivity(goHome)
                 } else {
                     Toast.makeText(
-                        this@SignUpActivity, "Yeyy akunmu telah terdaftar",
+                        this@SignUpActivity, "Akun telah terdaftar",
                         Toast.LENGTH_LONG).show()
                 }
             }
