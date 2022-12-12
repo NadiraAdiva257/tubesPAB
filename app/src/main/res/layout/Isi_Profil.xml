@@ -4,127 +4,169 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sign_up"
-    android:background="@color/red">
+    android:background="#EBEBEB"
+    tools:context=".Sign_up">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="177dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="68dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Nama Depan"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintHorizontal_bias="0.536"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="177dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Nama Belakang"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.845"
-        tools:ignore="TouchTargetSizeCheck"
-        android:textColor="#FFFFFF"/>
+        <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="-10dp"
+            android:elevation="50dp"
+            app:cardBackgroundColor="#BE3942"
+            app:cardCornerRadius="10dp">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="380dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="160dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Username"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.645"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        tools:ignore="TouchTargetSizeCheck"
-        android:textColor="#FFFFFF"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="380dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.645"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                <TextView
+                    android:id="@+id/tvNama2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Profil"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="370dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHp"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="108dp"
-        android:text="Simpan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
+        </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        android:textColor="#FFFFFF"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvHp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Nomor Telepon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        android:textColor="#FFFFFF"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="85dp"
-        android:layout_height="109dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.099"
-        app:srcCompat="@drawable/ic_profile" />
+                <TextView
+                    android:id="@+id/tvNamaDepan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nama Depan"
+                    android:textColor="#BE3942"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvNamaBelakang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nama Belakang"
+                    android:textColor="#BE3942"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etNamaDepan"
+                    android:layout_width="177dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/etNamaBelakang"
+                    android:layout_width="195dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Username"
+                android:textColor="#BE3942"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etUsernameProfil"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvEmailProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textColor="#BE3942"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etEmailProfil"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/tvHp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nomor Telepon"
+                android:textColor="#BE3942"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etNoHpProfil"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#BE3942"
+                android:text="Simpan"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
