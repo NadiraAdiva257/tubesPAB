@@ -8,222 +8,154 @@
     tools:context=".Pembayaran2">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="409dp"
-        android:layout_height="60dp"
-        android:background="#BE3942"
-        android:orientation="horizontal"
-        android:padding="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/ic_home"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/ic_home_active" />
-
-        <ImageView
-            android:id="@+id/ic_history"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/ic_history" />
-
-        <ImageView
-            android:id="@+id/ic_quest"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/ic_quest" />
-
-        <ImageView
-            android:id="@+id/ic_notifikasi"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/ic_notification" />
-
-        <ImageView
-            android:id="@+id/ic_profile"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/ic_profile" />
-    </LinearLayout>
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:layout_marginBottom="615dp"
-        android:background="#BE3942"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/tvPembayaran2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Pembayaran"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="564dp"
-        android:background="#EBEBEB"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
-        tools:layout_editor_absoluteX="16dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="326dp"
-            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="-10dp"
+            android:elevation="50dp"
+            app:cardBackgroundColor="#BE3942"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNama2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Quest"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             app:cardBackgroundColor="#EBEBEB">
 
-            <TextView
-                android:id="@+id/tvTotalPembayaran4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="265dp"
-                android:layout_marginTop="40dp"
-                android:text="20:47:19"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/toolbar" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvTotalPembayaran3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="270dp"
-                android:layout_marginTop="10dp"
-                android:text="105.000"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/toolbar" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvTotalPembayaran2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="3dp"
-                android:layout_marginTop="40dp"
-                android:text="Sisa Waktu Pembayaran"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/toolbar" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total Pembayaran"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tvTotalPembayaran"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="3dp"
-                android:layout_marginTop="10dp"
-                android:text="Total Pembayaran"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/toolbar" />
+                    <TextView
+                        android:id="@+id/tvTotalPembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="105.000"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/line" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sisa Waktu Pembayaran"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSisaWaktu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="20:47:19"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            app:cardBackgroundColor="#BE3942"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNamaBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Bank Mandiri"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Nomor Rekening:"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintHorizontal_bias="1" />
+
+                <TextView
+                    android:id="@+id/tvNorek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="123 08xx xxxx xxxx"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1" />
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="330dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="38dp"
-        app:cardBackgroundColor="#BE3942"
-        app:cardCornerRadius="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-        <TextView
-            android:id="@+id/tvTotalPembayaran7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="60dp"
-            android:text="123 08xx xxxx xxxx"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/toolbar" />
-
-        <TextView
-            android:id="@+id/tvTotalPembayaran6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="30dp"
-            android:text="Nomor Rekening"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:textStyle="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/toolbar" />
-
-        <TextView
-            android:id="@+id/tvTotalPembayaran5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="10dp"
-            android:text="Bank Mandiri"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/toolbar" />
-    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
