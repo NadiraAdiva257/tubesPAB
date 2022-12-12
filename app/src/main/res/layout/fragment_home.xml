@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EBEBEB">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -78,7 +79,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvDaftar"
             android:layout_width="match_parent"
-            android:layout_height="550dp"
+            android:layout_height="match_parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cdPoin"
             android:layout_marginStart="16dp"

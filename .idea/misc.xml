@@ -31,13 +31,17 @@
         <entry key="..\:/PAB/app/src/main/res/drawable/shape_rectangle_redlight.xml" value="0.145" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_dashboard2.xml" value="0.25" />
+        <entry key="..\:/PAB/app/src/main/res/layout/activity_detail.xml" value="0.2" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_main.xml" value="0.12158054711246201" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_sign_in.xml" value="0.4" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_splash_screen.xml" value="0.12158054711246201" />
+        <entry key="..\:/PAB/app/src/main/res/layout/fragment_challenge.xml" value="0.2151268115942029" />
         <entry key="..\:/PAB/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
-        <entry key="..\:/PAB/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/PAB/app/src/main/res/layout/fragment_history.xml" value="0.35634328358208955" />
+        <entry key="..\:/PAB/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/PAB/app/src/main/res/layout/fragment_notif.xml" value="0.2151268115942029" />
         <entry key="..\:/PAB/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
         <entry key="..\:/PAB/app/src/main/res/layout/fragment_profil.xml" value="0.25" />
         <entry key="..\:/PAB/app/src/main/res/layout/row_item_restaurant.xml" value="0.264" />

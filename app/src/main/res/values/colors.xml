@@ -13,4 +13,5 @@
     <color name="redLight">#C95C62</color>
     <color name="grey">#F6F6F6</color>
     <color name="greydark">#646464</color>
+    <color name="background">#EBEBEB</color>
 </resources>

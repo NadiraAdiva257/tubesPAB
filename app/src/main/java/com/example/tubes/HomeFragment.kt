@@ -85,7 +85,7 @@ class HomeFragment : Fragment() {
                 }
 
                 rv_daftar_restaurant.adapter = RestaurantAdapter(dataList) {
-                    var  intent = Intent(context, SignUpActivity::class.java).putExtra("data", it)
+                    var  intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
                     startActivity(intent)
                 }
             }
