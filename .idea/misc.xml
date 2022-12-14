@@ -10,6 +10,7 @@
         <entry key="..\:/PAB/app/src/main/res/drawable-v24/ic_quest.xml" value="0.1645" />
         <entry key="..\:/PAB/app/src/main/res/drawable-v24/ic_quest_active.xml" value="0.1645" />
         <entry key="..\:/PAB/app/src/main/res/drawable-v24/shape_line_grey.xml" value="0.1395" />
+        <entry key="..\:/PAB/app/src/main/res/drawable-v24/shape_line_red_shape.xml" value="0.1735" />
         <entry key="..\:/PAB/app/src/main/res/drawable-v24/shape_line_white.xml" value="0.157" />
         <entry key="..\:/PAB/app/src/main/res/drawable-v24/shape_rectangle_grey.xml" value="0.157" />
         <entry key="..\:/PAB/app/src/main/res/drawable-v24/shape_rectangle_red.xml" value="0.152" />
@@ -29,9 +30,10 @@
         <entry key="..\:/PAB/app/src/main/res/drawable/shape_line_red.xml" value="0.1395" />
         <entry key="..\:/PAB/app/src/main/res/drawable/shape_line_redlight.xml" value="0.145" />
         <entry key="..\:/PAB/app/src/main/res/drawable/shape_rectangle_redlight.xml" value="0.145" />
+        <entry key="..\:/PAB/app/src/main/res/layout/activity_cart.xml" value="0.2" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_dashboard2.xml" value="0.25" />
-        <entry key="..\:/PAB/app/src/main/res/layout/activity_detail.xml" value="0.264" />
+        <entry key="..\:/PAB/app/src/main/res/layout/activity_detail.xml" value="0.21948051948051947" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_main.xml" value="0.12158054711246201" />
         <entry key="..\:/PAB/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />

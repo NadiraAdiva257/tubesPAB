@@ -1,12 +1,16 @@
 package com.example.tubes
 
+import android.content.Intent
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.TextView
+import android.view.View
+import android.widget.*
 import com.bumptech.glide.Glide
+import com.example.tubes.signs.SignInActivity
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import java.time.LocalDateTime
 
 class DetailActivity : AppCompatActivity() {
     lateinit var tv_nama: TextView
@@ -40,9 +44,26 @@ class DetailActivity : AppCompatActivity() {
     lateinit var tv_Drink2: TextView
     lateinit var tv_hDrink2: TextView
 
+    lateinit var et_Ramen1: EditText
+    lateinit var et_Ramen2: EditText
+    lateinit var et_Ramen3: EditText
+    lateinit var cb_Ramen1: CheckBox
+    lateinit var iv_addRamen2: ImageView
+    lateinit var iv_addRamen3: ImageView
+    lateinit var et_Add1: EditText
+    lateinit var et_Add2: EditText
+    lateinit var iv_addAdd1: ImageView
+    lateinit var iv_addAdd2: ImageView
+    lateinit var et_Drink1: EditText
+    lateinit var et_Drink2: EditText
+    lateinit var iv_addDrink1: ImageView
+    lateinit var iv_addDrink2: ImageView
 
-    private lateinit var mDatabase: DatabaseReference
-    private var dataList = ArrayList<Restaurant>()
+    lateinit var bPesan: Button
+
+    lateinit var mDatabaseReference: DatabaseReference
+    lateinit var mFirebaseInstance: FirebaseDatabase
+    lateinit var mDatabase: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -87,6 +108,31 @@ class DetailActivity : AppCompatActivity() {
         tv_Drink2 = findViewById<TextView>(R.id.tvDrink2)
         tv_hDrink2 = findViewById<TextView>(R.id.tvHargaDrink2)
 
+        et_Ramen1 = findViewById<EditText>(R.id.etRamen1)
+        et_Ramen2 = findViewById<EditText>(R.id.etRamen2)
+        et_Ramen3 = findViewById<EditText>(R.id.etRamen3)
+        cb_Ramen1 = findViewById<CheckBox>(R.id.cbRamen1)
+        iv_addRamen2 = findViewById<ImageView>(R.id.ivAddRamen2)
+        iv_addRamen3 = findViewById<ImageView>(R.id.ivAddRamen3)
+        et_Add1 = findViewById<EditText>(R.id.etAdd1)
+        et_Add2 = findViewById<EditText>(R.id.etAdd2)
+        iv_addAdd1 = findViewById<ImageView>(R.id.ivAddAdditional1)
+        iv_addAdd2 = findViewById<ImageView>(R.id.ivAddAdditional2)
+        et_Drink1 = findViewById<EditText>(R.id.etDrink1)
+        et_Drink2 = findViewById<EditText>(R.id.etDrink2)
+        iv_addDrink1 = findViewById<ImageView>(R.id.ivAddDrink1)
+        iv_addDrink2 = findViewById<ImageView>(R.id.ivAddDrink2)
+
+        bPesan = findViewById<Button>(R.id.Bpesan)
+
+        et_Ramen1.isEnabled = false
+        et_Ramen2.isEnabled = false
+        et_Ramen3.isEnabled = false
+        et_Add1.isEnabled = false
+        et_Add2.isEnabled = false
+        et_Drink1.isEnabled = false
+        et_Drink2.isEnabled = false
+
         val data = intent.getParcelableExtra<Restaurant>("data")
 
         tv_nama.text = data?.nama
@@ -94,7 +140,7 @@ class DetailActivity : AppCompatActivity() {
         tv_waktu.text = data?.waktu
         tv_kategori1.text = data?.kategori1
         tv_NamaRamen1.text = data?.ramen1
-        tv_HargaRamen1.text = data?.hRamen1
+        tv_HargaRamen1.text = data?.hRamen1.toString()
         tv_NamaRamen2.text = data?.ramen2
         tv_HargaRamen2.text = data?.hRamen2
         tv_NamaRamen3.text = data?.ramen3
@@ -146,4 +192,43 @@ class DetailActivity : AppCompatActivity() {
             .into(iv_Drink2)
 
     }
+
+    fun bOrder(view: View) {
+        User.daftarPesanan = RangkumPesanan()
+
+        var goCart = Intent(this, CartActivity::class.java)
+        startActivity(goCart)
+
+    }
+
+
+    fun RangkumPesanan(): String {
+        var pesanan = ""
+
+        if (cb_Ramen1.isChecked) {
+            pesanan += et_Ramen1.text.toString() + " - " + tv_NamaRamen1.text.toString() + "\n"
+            //var jPesanan = et_Ramen1 + tv_HargaRamen1
+            pesanan += tv_HargaRamen1.text.toString()
+        }
+
+        return pesanan
+    }
+
+    fun clickRamen1(view: View) {
+        if (view is CheckBox) {
+            val checked: Boolean = view.isChecked
+
+            if (checked) {
+                et_Ramen1.isEnabled = true
+            } else {
+                et_Ramen1.isEnabled = false
+            }
+        }
+    }
+
+
+
+
+
+
 }

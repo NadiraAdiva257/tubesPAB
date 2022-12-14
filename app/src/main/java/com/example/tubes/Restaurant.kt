@@ -11,7 +11,7 @@ data class Restaurant (
     var alamat:String ?= "",
     var kategori1:String ?= "",
     var ramen1:String ?= "",
-    var hRamen1:String ?= "",
+    var hRamen1:Long ?= 0,
     var pRamen1:String ?= "",
     var ramen2:String ?= "",
     var hRamen2:String ?= "",
