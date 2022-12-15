@@ -31,7 +31,7 @@
                 android:paddingLeft="10dp">
 
                 <TextView
-                    android:id="@+id/tvNama2"
+                    android:id="@+id/tvProfile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Rincian Pesanan"
