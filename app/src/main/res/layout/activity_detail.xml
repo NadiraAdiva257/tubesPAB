@@ -29,27 +29,36 @@
                 android:orientation="vertical"
                 android:paddingLeft="10dp">
 
+                <ImageView
+                    android:id="@+id/Irestaurant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:scaleType="centerCrop"/>
+
                 <TextView
-                    android:id="@+id/tvProfile"
+                    android:id="@+id/tvNama"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Golden Geisha"
+                    android:text="Nama"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tvAlamat2"
+                    android:id="@+id/tvAlamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ruko Kelapa Hijau No. 1, Jl. Anggajaya 1, Condongcatur, Depok, Sleman, Yogyakarta "
+                    android:text="Alamat"
                     android:textColor="#FFFFFF" />
 
                 <TextView
-                    android:id="@+id/tvWaktuHarga2"
+                    android:id="@+id/tvWaktu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="10.00 - 21.00 | 15.000 - 50.000"
+                    android:text="Waktu"
                     android:textColor="#FFFFFF" />
 
             </LinearLayout>
@@ -61,38 +70,66 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvRamen"
+                android:id="@+id/tvKategori1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Ramen"
+                android:text="Kategori"
                 android:textColor="#BE3942"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="10dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="360dp"
-                    android:layout_height="170dp"
+                    android:layout_height="150dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbRamen1"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_width="204dp"
+                            android:layout_height="wrap_content"
+                            android:text="RAMEN MANTAP"
+                            android:textColor="@color/white"
+                            android:onClick="clickRamen1"
+                            tools:layout_editor_absoluteX="37dp"
+                            tools:layout_editor_absoluteY="360dp" />
+
+                    </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
                             android:id="@+id/ivRamen1"
                             android:layout_width="186dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"/>
+                            android:layout_marginStart="60dp"
+                            android:layout_weight="1" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -105,17 +142,11 @@
                                 android:id="@+id/tvNamaRamen1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Golden Geisha Batan"
+                                android:layout_marginStart="16dp"
+                                android:text="Ramen1"
                                 android:textColor="#BE3942"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/tvDeskRamen1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:text="Ramen dengan kuah baitan kaldu emas gurih pekat. Spesial sari tulang dan daging. Toping shogun wagyu roll dan mushitori cut serta shitake." />
 
                             <LinearLayout
                                 android:layout_width="268dp"
@@ -128,41 +159,64 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:layout_marginStart="50dp"
                                     android:layout_marginRight="170dp"
                                     android:layout_weight="0"
-                                    android:text="55.000"
+                                    android:text="harga1"
                                     android:textColor="#000000"
+                                    android:textSize="12sp"
                                     android:textStyle="bold" />
 
-                                <ImageView
-                                    android:id="@+id/ivAddRamen1"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="0"/>
                             </LinearLayout>
+                            //coba
 
+                            <LinearLayout
+                                android:layout_width="268dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/etRamen1"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginStart="50dp"
+                                    android:inputType="number"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/greydark"
+                                    android:hint="jumlah"
+                                    android:background="@drawable/shape_line_red_shape"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+                            //coba
                         </LinearLayout>
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="360dp"
-                    android:layout_height="170dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="20dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
                             android:id="@+id/ivRamen2"
                             android:layout_width="186dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"/>
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -175,17 +229,11 @@
                                 android:id="@+id/tvNamaRamen2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Tori Yakiniku Tamtam"
+                                android:layout_marginStart="16dp"
+                                android:text="Ramen2"
                                 android:textColor="#BE3942"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/tvDeskRamen2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:text="Ramen dengan kuah baitan kaldu emas gurih pekat. Spesial sari tulang dan daging. Toping shogun wagyu roll dan mushitori cut. Ditambah tamtam chili oil spesial pedas" />
 
                             <LinearLayout
                                 android:layout_width="268dp"
@@ -198,41 +246,57 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:layout_marginStart="50dp"
                                     android:layout_marginRight="170dp"
                                     android:layout_weight="0"
-                                    android:text="55.000"
+                                    android:text="harga2"
                                     android:textColor="#000000"
+                                    android:textSize="12sp"
                                     android:textStyle="bold" />
 
                                 <ImageView
                                     android:id="@+id/ivAddRamen2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="0" />
+                                    android:layout_marginStart="100dp"
+                                    android:layout_weight="0"
+                                    android:src="@drawable/ic_add" />
+
+                                <EditText
+                                    android:id="@+id/etRamen2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:minHeight="50dp"
+                                    android:text="1" />
                             </LinearLayout>
-
                         </LinearLayout>
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="360dp"
-                    android:layout_height="170dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="20dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
                             android:id="@+id/ivRamen3"
                             android:layout_width="186dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"/>
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -245,17 +309,11 @@
                                 android:id="@+id/tvNamaRamen3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Wagyu Chashu Tamtam"
+                                android:layout_marginStart="16dp"
+                                android:text="Ramen3"
                                 android:textColor="#BE3942"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/tvDeskRamen3"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:text="Ramen dengan kuah baitan kaldu emas gurih pekat. Spesial sari tulang dan daging. Topping wagyu beef bbq jepang dan shitake. Ditambah tamtam chili oil spesial gurih pedas." />
 
                             <LinearLayout
                                 android:layout_width="268dp"
@@ -268,59 +326,79 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:layout_marginStart="50dp"
                                     android:layout_marginRight="170dp"
                                     android:layout_weight="0"
-                                    android:text="55.000"
+                                    android:text="harga3"
                                     android:textColor="#000000"
+                                    android:textSize="12sp"
                                     android:textStyle="bold" />
 
                                 <ImageView
                                     android:id="@+id/ivAddRamen3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="0"/>
+                                    android:layout_marginStart="100dp"
+                                    android:layout_weight="0"
+                                    android:src="@drawable/ic_add" />
+
+                                <EditText
+                                    android:id="@+id/etRamen3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:minHeight="50dp"
+                                    android:text="1" />
                             </LinearLayout>
-
                         </LinearLayout>
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
+                //kategori
             </LinearLayout>
 
             <TextView
-                android:id="@+id/tvSushi"
+                android:id="@+id/tvKategori2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Sushi"
+                android:text="Kategori"
                 android:textColor="#BE3942"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="10dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="360dp"
-                    android:layout_height="170dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="20dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
-                            android:id="@+id/ivSushi1"
+                            android:id="@+id/ivAddition1"
                             android:layout_width="186dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"/>
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -330,20 +408,14 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tvNamaSushi1"
+                                android:id="@+id/tvNamaAdd1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Golden Geisha Batan"
+                                android:layout_marginStart="16dp"
+                                android:text="Additional1"
                                 android:textColor="#BE3942"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/tvDeskSushi1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:text="Ramen dengan kuah baitan kaldu emas gurih pekat special sari tulang dan daging serta toping shogun wagyu roll dan mushitori cut. Merupakan handmade racikan dapur golden geisha." />
 
                             <LinearLayout
                                 android:layout_width="268dp"
@@ -352,30 +424,324 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/tvHargaSushi1"
+                                    android:id="@+id/tvHargaAdd1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:layout_marginStart="50dp"
                                     android:layout_marginRight="170dp"
                                     android:layout_weight="0"
-                                    android:text="55.000"
+                                    android:text="harga1"
                                     android:textColor="#000000"
+                                    android:textSize="12sp"
                                     android:textStyle="bold" />
 
                                 <ImageView
-                                    android:id="@+id/ivAddSushi1"
+                                    android:id="@+id/ivAddAdditional1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="0" />
+                                    android:layout_marginStart="100dp"
+                                    android:layout_weight="0"
+                                    android:src="@drawable/ic_add" />
+
+                                <EditText
+                                    android:id="@+id/etAdd1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:minHeight="50dp"
+                                    android:text="1" />
                             </LinearLayout>
-
                         </LinearLayout>
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="360dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/ivAddition2"
+                            android:layout_width="186dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvNamaAdd2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Additional2"
+                                android:textColor="#BE3942"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="268dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvHargaAdd2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="50dp"
+                                    android:layout_marginRight="170dp"
+                                    android:layout_weight="0"
+                                    android:text="harga2"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/ivAddAdditional2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="100dp"
+                                    android:layout_weight="0"
+                                    android:src="@drawable/ic_add" />
+
+
+                                <EditText
+                                    android:id="@+id/etAdd2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:minHeight="50dp"
+                                    android:text="1" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                //kategori
+
             </LinearLayout>
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/tvKategori3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Kategori"
+                android:textColor="#BE3942"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="360dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/ivDrink1"
+                            android:layout_width="186dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvDrink1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Drink1"
+                                android:textColor="#BE3942"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="268dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvHargaDrink1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="50dp"
+                                    android:layout_marginRight="170dp"
+                                    android:layout_weight="0"
+                                    android:text="harga1"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/ivAddDrink1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="100dp"
+                                    android:layout_weight="0"
+                                    android:src="@drawable/ic_add" />
+
+
+                                <EditText
+                                    android:id="@+id/etDrink1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:minHeight="50dp"
+                                    android:text="1" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="360dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/ivDrink2"
+                            android:layout_width="186dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvDrink2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Drink2"
+                                android:textColor="#BE3942"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="268dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvHargaDrink2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="50dp"
+                                    android:layout_marginRight="170dp"
+                                    android:layout_weight="0"
+                                    android:text="harga2"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/ivAddDrink2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="100dp"
+                                    android:layout_weight="0"
+                                    android:src="@drawable/ic_add" />
+
+
+                                <EditText
+                                    android:id="@+id/etDrink2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:minHeight="50dp"
+                                    android:text="1" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                //kategori
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Bpesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="bOrder"
+                android:background="@drawable/shape_rectangle_red"
+                android:text="Pesan Sekarang"
+                android:textColor="@color/white"/>
+    </LinearLayout>
     </LinearLayout>
 </ScrollView>
