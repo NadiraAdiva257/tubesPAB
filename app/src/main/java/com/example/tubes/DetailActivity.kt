@@ -201,7 +201,7 @@ class DetailActivity : AppCompatActivity() {
 
             savePesanan()
 
-            var goCart = Intent(this, Cart)
+            var goCart = Intent(this, CartActivity::class.java)
             startActivity(goCart)
 
         }
