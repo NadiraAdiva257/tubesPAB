@@ -35,6 +35,7 @@ class CartActivity : AppCompatActivity() {
         txNama = findViewById(R.id.txNama)
         rv_pesanan = findViewById(R.id.rvPesanan)
 
+
         txNama.setText(preferences.getValues("nama"))
 
         rv_pesanan.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
