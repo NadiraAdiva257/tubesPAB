@@ -207,6 +207,14 @@ class DetailActivity : AppCompatActivity() {
         }
     }
 
+    fun bOrder(view: View) {
+        User.daftarPesanan = RangkumPesanan()
+
+        var goCart = Intent(this, CartActivity::class.java)
+        startActivity(goCart)
+
+    }
+
 
     fun RangkumPesanan(): String {
         var pesanan = ""
