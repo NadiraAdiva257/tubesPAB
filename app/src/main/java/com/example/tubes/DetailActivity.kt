@@ -201,18 +201,10 @@ class DetailActivity : AppCompatActivity() {
 
             savePesanan()
 
-            var goCart = Intent(this, CartActivity::class.java)
+            var goCart = Intent(this, Cart)
             startActivity(goCart)
 
         }
-    }
-
-    fun bOrder(view: View) {
-        User.daftarPesanan = RangkumPesanan()
-
-        var goCart = Intent(this, CartActivity::class.java)
-        startActivity(goCart)
-
     }
 
 
