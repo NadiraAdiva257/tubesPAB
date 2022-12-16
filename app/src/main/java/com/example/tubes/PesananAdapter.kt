@@ -38,7 +38,6 @@ class PesananAdapter(private var data: List<Pesanan>,
         private val tvMenu: TextView = view.findViewById(R.id.tvMenu)
         private val tvJumlah: TextView = view.findViewById(R.id.tvJumlah)
         private val tvTotal: TextView = view.findViewById(R.id.tvTotal)
-        private val tvKeseluruhan: TextView = view.findViewById(R.id.tvKeseluruhan)
 
         fun bindItem(data: Pesanan, listener: (Pesanan) -> Unit, context: Context) {
             tvMenu.setText(data.menu)
