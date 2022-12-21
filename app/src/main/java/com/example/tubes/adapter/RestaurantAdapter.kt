@@ -1,16 +1,15 @@
-package com.example.tubes
+package com.example.tubes.adapter
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.ViewParent
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.tubes.R
+import com.example.tubes.model.Restaurant
 
 class RestaurantAdapter(private var data: List<Restaurant>,
                         private val listener:(Restaurant) -> Unit)
@@ -20,7 +19,7 @@ class RestaurantAdapter(private var data: List<Restaurant>,
         override fun onCreateViewHolder(
             parent: ViewGroup,
             viewType: Int
-        ): RestaurantAdapter.ViewHolder{
+        ): ViewHolder {
             val layoutInflater = LayoutInflater.from(parent.context)
             contextAdapter = parent.context
             val inflatedView = layoutInflater.inflate(R.layout.row_item_restaurant, parent, false)
@@ -29,7 +28,7 @@ class RestaurantAdapter(private var data: List<Restaurant>,
 
     override fun getItemCount(): Int = data.size
 
-    override fun onBindViewHolder(holder: RestaurantAdapter.ViewHolder, position: Int){
+    override fun onBindViewHolder(holder: ViewHolder, position: Int){
         holder.bindItem(data[position], listener, contextAdapter)
     }
 
@@ -39,13 +38,13 @@ class RestaurantAdapter(private var data: List<Restaurant>,
         private val tvLok:TextView = view.findViewById(R.id.tvLokToko)
         private val tvImage:ImageView = view.findViewById(R.id.ivTokoRamen)
 
-        fun bindItem(data:Restaurant, listener: (Restaurant) -> Unit, context: Context) {
+        fun bindItem(data: Restaurant, listener: (Restaurant) -> Unit, context: Context) {
             tvNama.setText(data.nama)
             tvJam.setText(data.waktu)
             tvLok.setText(data.alamat)
 
             Glide.with(context)
-                .load(data.foto)
+                .load(data.photo)
                 .into(tvImage)
 
             itemView.setOnClickListener{

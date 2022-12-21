@@ -11,9 +11,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tubes.signs.SignUpActivity
+import com.example.tubes.adapter.RestaurantAdapter
+import com.example.tubes.model.Restaurant
+import com.example.tubes.util.Preferences
 import com.google.firebase.database.*
-import java.text.NumberFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -62,11 +63,13 @@ class HomeFragment : Fragment() {
         rv_daftar_restaurant = requireView().findViewById(R.id.rvDaftar)
 
         preferences = Preferences(requireActivity().applicationContext)
-        mDatabaReference = FirebaseDatabase.getInstance().getReference("Restaurant")
+        mDatabaReference = FirebaseDatabase.getInstance().getReference("Restaurant1")
 
         if(preferences.getValues("poin")!="") {
             tv_poin.setText(preferences.getValues("poin"))
         }
+
+
 
         rv_daftar_restaurant.layoutManager = LinearLayoutManager(context)
 

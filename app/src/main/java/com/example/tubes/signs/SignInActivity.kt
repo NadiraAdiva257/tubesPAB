@@ -8,7 +8,8 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.tubes.HomeActivity
 import com.example.tubes.R
-import com.example.tubes.User
+import com.example.tubes.util.User
+import com.example.tubes.util.Preferences
 import com.google.firebase.database.*
 
 class SignInActivity : AppCompatActivity() {
@@ -19,14 +20,14 @@ class SignInActivity : AppCompatActivity() {
     lateinit var Bmasuk: Button
 
     lateinit var mDatabaseReference: DatabaseReference
-    lateinit var preference: com.example.tubes.Preferences
+    lateinit var preference: Preferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
         mDatabaseReference = FirebaseDatabase.getInstance().getReference("User")
-        preference = com.example.tubes.Preferences(this)
+        preference = Preferences(this)
 
         Bdaftar = findViewById<Button>(R.id.Bbuat)
         Eusername = findViewById<EditText>(R.id.Eusername)

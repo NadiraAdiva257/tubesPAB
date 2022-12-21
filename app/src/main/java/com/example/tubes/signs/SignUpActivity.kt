@@ -2,14 +2,13 @@ package com.example.tubes.signs
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tubes.R
-import com.example.tubes.User
+import com.example.tubes.util.User
 import com.google.firebase.database.*
 
 class SignUpActivity : AppCompatActivity() {
@@ -87,6 +86,7 @@ class SignUpActivity : AppCompatActivity() {
         user.email = emailSign
         user.password = passwordSign
         user.noHp = noHpSign
+        user.poin = "0"
 
         if (usernameSign != null) {
             checkingUsername(usernameSign, user)

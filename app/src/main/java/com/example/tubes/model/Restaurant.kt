@@ -1,4 +1,4 @@
-package com.example.tubes
+package com.example.tubes.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
@@ -6,7 +6,7 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class Restaurant (
     var nama:String ?= "",
-    var foto:String ?= "",
+    var photo:String ?= "",
     var waktu:String ?= "",
     var alamat:String ?= "",
     var kategori1:String ?= "",

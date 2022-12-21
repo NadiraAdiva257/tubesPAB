@@ -7,6 +7,7 @@
     tools:context=".CartActivity">
 
     <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#EBEBEB"
@@ -15,48 +16,48 @@
         app:layout_constraintTop_toTopOf="parent"
         android:orientation="vertical">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cdPesanan"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="-10dp"
-        android:elevation="50dp"
-        app:cardBackgroundColor="#BE3942"
-        app:cardCornerRadius="10dp">
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdPesanan"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            android:paddingLeft="10dp">
+            android:layout_height="60dp"
+            android:layout_marginTop="-10dp"
+            android:elevation="50dp"
+            app:cardBackgroundColor="#BE3942"
+            app:cardCornerRadius="10dp">
 
-            <TextView
-                android:id="@+id/tvNama2"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rincian Pesanan"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
 
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/tvNama2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rincian Pesanan"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/txNama"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="36dp"
-        android:text="TextView"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cdPesanan" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txNama"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="36dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cdPesanan" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvPesanan"
@@ -70,6 +71,47 @@
             app:cardCornerRadius="10dp"/>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@id/tvTotal"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        android:id="@+id/tvTotalBayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_bayar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/shape_rectangle_red"
+        android:text="Bayar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"/>
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

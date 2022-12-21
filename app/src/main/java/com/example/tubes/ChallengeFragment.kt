@@ -5,6 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.tubes.adapter.QuestAdapter
+import com.example.tubes.model.Quest
+import com.example.tubes.util.Preferences
+import com.google.firebase.database.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,14 +27,18 @@ private const val ARG_PARAM2 = "param2"
  */
 class ChallengeFragment : Fragment() {
     // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private lateinit var preferences: Preferences
+    private lateinit var mDatabaseReference: DatabaseReference
+
+    private var questList = ArrayList<Quest>()
+    private lateinit var iKoin: ImageView
+    private lateinit var tPoinku: TextView
+    private lateinit var tPoin: TextView
+    private lateinit var rvQuest: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
         }
     }
 
@@ -37,23 +50,42 @@ class ChallengeFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_challenge, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ChallengeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ChallengeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        iKoin = requireView().findViewById(R.id.iKoin)
+        tPoinku = requireView().findViewById(R.id.tPoinKu)
+        tPoin = requireView().findViewById(R.id.tPoin)
+        rvQuest = requireView().findViewById(R.id.rvQuest)
+
+        preferences = Preferences(requireActivity().applicationContext)
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference("Quest")
+
+        tPoin.setText(preferences.getValues("poin"))
+        rvQuest.layoutManager = LinearLayoutManager(context)
+
+        getQuest()
+        }
+
+    private fun getQuest(){
+        mDatabaseReference.addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(datasnapshot: DataSnapshot) {
+
+                questList.clear()
+                for (getdataSnapshot in datasnapshot.children){
+                    var quest = getdataSnapshot.getValue(Quest::class.java)
+                    questList.add(quest!!)
                 }
+                rvQuest.adapter = QuestAdapter(questList){
+
+                }
+
             }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                Toast.makeText(context, ""+databaseError.message, Toast.LENGTH_LONG).show()
+            }
+        })
     }
-}
+    }
+
+
