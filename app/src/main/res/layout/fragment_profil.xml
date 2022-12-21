@@ -3,122 +3,145 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ProfilFragment">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="10dp">
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="-10dp"
+            android:elevation="50dp"
+            app:cardBackgroundColor="#BE3942"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Profil"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:orientation="horizontal">
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="20dp">
 
             <TextView
-                android:id="@+id/tvNamaDepan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nama Depan"
-                android:textColor="#BE3942" />
+                android:text="Nama"
+                android:textColor="#BE3942"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etNamaProfil"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_line_red"
+                android:inputType="textPersonName"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#000000" />
 
             <TextView
-                android:id="@+id/tvNamaBelakang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Nama Belakang"
-                android:textColor="#BE3942" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                android:layout_marginTop="10dp"
+                android:text="Username"
+                android:textColor="#BE3942"
+                android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/etNamaDepan"
-                android:layout_width="177dp"
+                android:id="@+id/etUsernameProfil"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_line_red"
+                android:drawablePadding="10dp"
+                android:inputType="textPersonName"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:inputType="textPersonName"
-                android:textColor="#000000"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                android:text="Email"
+                android:textColor="#BE3942"
+                android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/etNamaBelakang"
-                android:layout_width="195dp"
+                android:id="@+id/etEmailProfil"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_line_red"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvHp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                android:text="Nomor Telepon"
+                android:textColor="#BE3942"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etNoHpProfil"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_line_red"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/butEditProfile"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#BE3942"
+
+                android:text="Edit"
+                android:textColor="#FFFFFF" />
+
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/tvUsername"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Username"
-            android:textColor="#BE3942" />
-
-        <EditText
-            android:id="@+id/etUsernameProfil"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:inputType="textPersonName"
-            android:textColor="#FFFFFF"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-        <TextView
-            android:id="@+id/tvEmailProfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Email"
-            android:textColor="#BE3942" />
-
-        <EditText
-            android:id="@+id/etEmailProfil"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:inputType="textEmailAddress"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/tvHp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Nomor Telepon"
-            android:textColor="#BE3942" />
-
-        <EditText
-            android:id="@+id/etNoHpProfil"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:inputType="phone"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#BE3942"
-            android:text="Simpan"
-            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 
