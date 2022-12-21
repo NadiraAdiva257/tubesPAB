@@ -70,7 +70,7 @@
                 android:background="@drawable/shape_line_red"
                 android:inputType="textPersonName"
                 android:gravity="center_horizontal|center_vertical"
-                android:textColor="#000000" />
+                android:textColor="@color/red" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -89,7 +89,7 @@
                 android:drawablePadding="10dp"
                 android:inputType="textPersonName"
                 android:gravity="center_horizontal|center_vertical"
-                android:textColor="#000000" />
+                android:textColor="@color/red" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -108,7 +108,7 @@
                 android:drawablePadding="10dp"
                 android:inputType="textEmailAddress"
                 android:gravity="center_horizontal|center_vertical"
-                android:textColor="#000000" />
+                android:textColor="@color/red" />
 
             <TextView
                 android:id="@+id/tvHp"
@@ -128,7 +128,7 @@
                 android:drawablePadding="10dp"
                 android:inputType="phone"
                 android:gravity="center_horizontal|center_vertical"
-                android:textColor="#000000" />
+                android:textColor="@color/red" />
 
             <Button
                 android:id="@+id/butEditProfile"
