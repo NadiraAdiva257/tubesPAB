@@ -19,13 +19,13 @@ class HomeActivity : AppCompatActivity() {
         home = findViewById<ImageView>(R.id.iv_menu1)
         //history = findViewById<ImageView>(R.id.iv_menu2)
         challenge = findViewById<ImageView>(R.id.iv_menu3)
-        notif = findViewById<ImageView>(R.id.iv_menu4)
+        //notif = findViewById<ImageView>(R.id.iv_menu4)
         profil = findViewById<ImageView>(R.id.iv_menu5)
 
         val fragmentHome = HomeFragment()
         //val fragmentHistory = HistoryFragment()
         val fragmentChallenge = ChallengeFragment()
-        val fragmentNotif = NotifFragment()
+        //val fragmentNotif = NotifFragment()
         val fragmentProfil = ProfilFragment()
 
         setFragment(fragmentHome)
@@ -36,7 +36,7 @@ class HomeActivity : AppCompatActivity() {
             changeIcon(home, R.drawable.ic_home_active)
             //changeIcon(history, R.drawable.ic_history)
             changeIcon(challenge, R.drawable.ic_quest)
-            changeIcon(notif, R.drawable.ic_notifikasi)
+            //changeIcon(notif, R.drawable.ic_notifikasi)
             changeIcon(profil, R.drawable.ic_profil)
         }
 
@@ -56,19 +56,19 @@ class HomeActivity : AppCompatActivity() {
             changeIcon(home, R.drawable.ic_home)
             //changeIcon(history, R.drawable.ic_history)
             changeIcon(challenge, R.drawable.ic_quest_active)
-            changeIcon(notif, R.drawable.ic_notifikasi)
+            //changeIcon(notif, R.drawable.ic_notifikasi)
             changeIcon(profil, R.drawable.ic_profil)
         }
 
-        notif.setOnClickListener{
-            setFragment(fragmentNotif)
-
-            changeIcon(home, R.drawable.ic_home)
-            //changeIcon(history, R.drawable.ic_history)
-            changeIcon(challenge, R.drawable.ic_quest)
-            changeIcon(notif, R.drawable.ic_notifikasi_active)
-            changeIcon(profil, R.drawable.ic_profil)
-        }
+//        notif.setOnClickListener{
+//            setFragment(fragmentNotif)
+//
+//            changeIcon(home, R.drawable.ic_home)
+//            //changeIcon(history, R.drawable.ic_history)
+//            changeIcon(challenge, R.drawable.ic_quest)
+//            changeIcon(notif, R.drawable.ic_notifikasi_active)
+//            changeIcon(profil, R.drawable.ic_profil)
+//        }
 
         profil.setOnClickListener{
             setFragment(fragmentProfil)
@@ -76,7 +76,7 @@ class HomeActivity : AppCompatActivity() {
             changeIcon(home, R.drawable.ic_home)
             //changeIcon(history, R.drawable.ic_history)
             changeIcon(challenge, R.drawable.ic_quest)
-            changeIcon(notif, R.drawable.ic_notifikasi)
+            //changeIcon(notif, R.drawable.ic_notifikasi)
             changeIcon(profil, R.drawable.ic_profil_active)
         }
     }
