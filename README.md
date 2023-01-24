@@ -12,7 +12,7 @@ ini adalah aplikasi pemesanan makanan jepang
 1. Firebase
 
 ## Source
-Anjeli Puteri Anggreini
-Hestri Apriliani Widowati
-Nadira Adiva Wibowo
-Sonya Ainurrohman
+1. Anjeli Puteri Anggreini
+2. Hestri Apriliani Widowati
+3. Nadira Adiva Wibowo
+4. Sonya Ainurrohman
