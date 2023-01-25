@@ -1,5 +1,5 @@
 # Rahui
-ini adalah aplikasi pemesanan makanan jepang
+This is a mobile application for Japanese food reservation
 
 ## Fiture
 1. Splashscreen
