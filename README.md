@@ -1,5 +1,5 @@
 # Rahui
-This is a mobile application for Japanese food reservation
+Rahui App is a Japanese food reservation application in Yogyakarta. Rahui App for allow customers to make reservations in advance, eliminating the need to queue at the restaurant. Users can also complete challenges provided by the app and earn rewards upon successfully completing the challenges.
 
 ## Fiture
 1. Splashscreen
